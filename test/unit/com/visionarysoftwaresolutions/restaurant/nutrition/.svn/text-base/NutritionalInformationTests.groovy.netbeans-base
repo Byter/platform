@@ -1,0 +1,119 @@
+package com.visionarysoftwaresolutions.restaurant.nutrition
+
+import grails.test.*
+
+class NutritionalInformationTests extends GrailsUnitTestCase {
+    NutritionalInformation toTest
+    protected void setUp() {
+        super.setUp()
+    }
+
+    protected void tearDown() {
+        super.tearDown()
+    }
+
+    void testInvalidNegativeCalories(){
+        toTest= new NutritionalInformation(calories:-1)
+        mockForConstraintsTests(NutritionalInformation, [toTest])
+        assertFalse toTest.validate()
+        assertEquals "min", toTest.errors['calories']
+    }
+
+    void testInvalidNegativeCaloriesFromFat(){
+        toTest= new NutritionalInformation(caloriesFromFat:-1)
+        mockForConstraintsTests(NutritionalInformation, [toTest])
+        assertFalse toTest.validate()
+        assertEquals "min", toTest.errors['caloriesFromFat']
+    }
+
+    void testInvalidTooBigCaloriesFromFat(){
+        toTest= new NutritionalInformation(calories:100, caloriesFromFat:120)
+        mockForConstraintsTests(NutritionalInformation, [toTest])
+        assertFalse toTest.validate()
+        assertEquals "validator", toTest.errors['caloriesFromFat']
+    }
+
+    void testInvalidNegativeSaturatedFat(){
+        toTest= new NutritionalInformation(saturatedFat:-1)
+        mockForConstraintsTests(NutritionalInformation, [toTest])
+        assertFalse toTest.validate()
+        assertEquals "min", toTest.errors['saturatedFat']
+    }
+
+    void testInvalidNegativeTransFat(){
+        toTest= new NutritionalInformation(transFat:-1)
+        mockForConstraintsTests(NutritionalInformation, [toTest])
+        assertFalse toTest.validate()
+        assertEquals "min", toTest.errors['transFat']
+    }
+
+    void testInvalidNegativeCholesterol(){
+        toTest= new NutritionalInformation(cholesterol:-1)
+        mockForConstraintsTests(NutritionalInformation, [toTest])
+        assertFalse toTest.validate()
+        assertEquals "min", toTest.errors['cholesterol']
+    }
+
+    void testInvalidNegativeSodium(){
+        toTest= new NutritionalInformation(sodium:-1)
+        mockForConstraintsTests(NutritionalInformation, [toTest])
+        assertFalse toTest.validate()
+        assertEquals "min", toTest.errors['sodium']
+    }
+
+    void testInvalidNegativeTotalCarbohydrate(){
+        toTest= new NutritionalInformation(totalCarbohydrate:-1)
+        mockForConstraintsTests(NutritionalInformation, [toTest])
+        assertFalse toTest.validate()
+        assertEquals "min", toTest.errors['totalCarbohydrate']
+    }
+
+    void testInvalidNegativeDietaryFiber(){
+        toTest= new NutritionalInformation(dietaryFiber:-1)
+        mockForConstraintsTests(NutritionalInformation, [toTest])
+        assertFalse toTest.validate()
+        assertEquals "min", toTest.errors['dietaryFiber']
+    }
+
+    void testInvalidTooBigDietaryFiber(){
+        toTest= new NutritionalInformation(totalCarbohydrate:100, dietaryFiber:120)
+        mockForConstraintsTests(NutritionalInformation, [toTest])
+        assertFalse toTest.validate()
+        assertEquals "validator", toTest.errors['dietaryFiber']
+    }
+
+    void testInvalidNegativeSugars(){
+        toTest= new NutritionalInformation(sugars:-1)
+        mockForConstraintsTests(NutritionalInformation, [toTest])
+        assertFalse toTest.validate()
+        assertEquals "min", toTest.errors['sugars']
+    }
+
+    void testInvalidTooBigSugars(){
+        toTest= new NutritionalInformation(totalCarbohydrate:100, sugars:120)
+        mockForConstraintsTests(NutritionalInformation, [toTest])
+        assertFalse toTest.validate()
+        assertEquals "validator", toTest.errors['sugars']
+    }
+
+    void testInvalidNegativeProtein(){
+        toTest= new NutritionalInformation(protein:-1)
+        mockForConstraintsTests(NutritionalInformation, [toTest])
+        assertFalse toTest.validate()
+        assertEquals "min", toTest.errors['protein']
+    }
+
+    void testCalculateTotalFat(){
+        toTest= new NutritionalInformation(saturatedFat:1, transFat:1)
+        assertEquals 2, toTest.calculateTotalFat()
+    }
+    
+    void testCombinedNutritionalInformation(){
+        toTest= new NutritionalInformation(saturatedFat:1, transFat:1)
+        def another = new NutritionalInformation(protein: 5, saturatedFat:4, transFat:3)
+        def result = toTest + another
+        assertEquals 5, result.protein
+        assertEquals 5, result.saturatedFat
+        assertEquals 4, result.transFat
+    }
+}

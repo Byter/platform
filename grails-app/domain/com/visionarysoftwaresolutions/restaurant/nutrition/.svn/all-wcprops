@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/17/trunk/RestaurantManagement/grails-app/domain/com/visionarysoftwaresolutions/restaurant/nutrition
+END
+Serving.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/15/trunk/RestaurantManagement/grails-app/domain/com/visionarysoftwaresolutions/restaurant/nutrition/Serving.groovy
+END
+NutritionalInformation.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/16/trunk/RestaurantManagement/grails-app/domain/com/visionarysoftwaresolutions/restaurant/nutrition/NutritionalInformation.groovy
+END
+Ingredient.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/15/trunk/RestaurantManagement/grails-app/domain/com/visionarysoftwaresolutions/restaurant/nutrition/Ingredient.groovy
+END
+Recipe.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/17/trunk/RestaurantManagement/grails-app/domain/com/visionarysoftwaresolutions/restaurant/nutrition/Recipe.groovy
+END

@@ -1,0 +1,22 @@
+Testsuite: com.visionarysoftwaresolutions.location.ContactInformationTests
+Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 6.072 sec
+------------- Standard Output ---------------
+--Output from testValidNullPhoneNumber--
+--Output from testValidNullEmail--
+--Output from testValidContactInformation--
+--Output from testValidNullVirtualSpots--
+--Output from testInvalidEmail--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testValidNullPhoneNumber--
+--Output from testValidNullEmail--
+--Output from testValidContactInformation--
+--Output from testValidNullVirtualSpots--
+--Output from testInvalidEmail--
+------------- ---------------- ---------------
+
+Testcase: testValidNullPhoneNumber took 4.474 sec
+Testcase: testValidNullEmail took 0.096 sec
+Testcase: testValidContactInformation took 0.089 sec
+Testcase: testValidNullVirtualSpots took 0.087 sec
+Testcase: testInvalidEmail took 0.176 sec

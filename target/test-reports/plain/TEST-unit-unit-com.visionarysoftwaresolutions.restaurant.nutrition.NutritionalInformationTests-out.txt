@@ -1,0 +1,15 @@
+--Output from testInvalidNegativeCholesterol--
+--Output from testInvalidNegativeTotalCarbohydrate--
+--Output from testInvalidNegativeDietaryFiber--
+--Output from testInvalidNegativeCaloriesFromFat--
+--Output from testInvalidTooBigCaloriesFromFat--
+--Output from testInvalidNegativeSaturatedFat--
+--Output from testInvalidTooBigDietaryFiber--
+--Output from testCombinedNutritionalInformation--
+--Output from testInvalidNegativeSodium--
+--Output from testInvalidNegativeTransFat--
+--Output from testInvalidNegativeCalories--
+--Output from testInvalidNegativeSugars--
+--Output from testInvalidTooBigSugars--
+--Output from testInvalidNegativeProtein--
+--Output from testCalculateTotalFat--

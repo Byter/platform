@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Puppet" name="com.visionarysoftwaresolutions.restaurant.nutrition.IngredientTests" tests="4" time="1.878" timestamp="2012-03-05T07:35:40">
+  <properties />
+  <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.IngredientTests" name="testInvalidNegativeAmountIngredient" time="1.097" />
+  <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.IngredientTests" name="testInvalidBlankNameIngredient" time="0.047" />
+  <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.IngredientTests" name="testInvalidUnitIngredient" time="0.046" />
+  <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.IngredientTests" name="testValidIngredient" time="0.047" />
+  <system-out><![CDATA[--Output from testInvalidNegativeAmountIngredient--
+--Output from testInvalidBlankNameIngredient--
+--Output from testInvalidUnitIngredient--
+--Output from testValidIngredient--
+]]></system-out>
+  <system-err><![CDATA[--Output from testInvalidNegativeAmountIngredient--
+--Output from testInvalidBlankNameIngredient--
+--Output from testInvalidUnitIngredient--
+--Output from testValidIngredient--
+]]></system-err>
+</testsuite>

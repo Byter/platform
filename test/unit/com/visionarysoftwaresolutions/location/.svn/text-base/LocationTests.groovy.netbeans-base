@@ -1,0 +1,97 @@
+package com.visionarysoftwaresolutions.location
+
+import grails.test.*
+
+class LocationTests extends GrailsUnitTestCase {
+    StreetAddress address = new StreetAddress(address:"3116 S. Mill Ave",
+        city:"Tempe",
+        region:'Arizona',
+        postalCode:"85281",
+        country:"USA"
+    )
+    ContactInformation contact = new ContactInformation(email:"visionary.software.solutions@gmail.com")
+    Location toTest
+
+    protected void setUp() {
+        super.setUp()
+    }
+
+    protected void tearDown() {
+        super.tearDown()
+    }
+
+    void testValidLocation() {
+        toTest = new Location(latitude:85, 
+                              longitude:80,
+                              address:address,
+                              contact:contact
+                          )
+        mockForConstraintsTests(Location, [toTest])
+        assertTrue toTest.validate()
+    }
+    
+    void testInvalidLocationNullAddress() {
+        toTest = new Location(latitude:85, 
+                              longitude:80,
+                              contact:contact
+                          )
+        mockForConstraintsTests(Location, [toTest])
+        assertFalse toTest.validate()
+        assertEquals "nullable", toTest.errors["address"]
+    }
+
+    void testInvalidLocationNullContact() {
+        toTest = new Location(latitude:85,
+                              longitude:80,
+                              address:address
+                          )
+        mockForConstraintsTests(Location, [toTest])
+        assertFalse toTest.validate()
+        assertEquals "nullable", toTest.errors["contact"]
+    }
+
+    void testInvalidLowLatitude() {
+        toTest = new Location(latitude:-92,
+                              longitude:80,
+                              address:address,
+                              contact:contact
+                          )
+        mockForConstraintsTests(Location, [toTest])
+        assertFalse toTest.validate()
+        assertEquals "range", toTest.errors["latitude"]
+    }
+
+    void testInvalidHighLatitude() {
+        toTest = new Location(latitude:92,
+                              longitude:80,
+                              address:address,
+                              contact:contact
+                          )
+        mockForConstraintsTests(Location, [toTest])
+        assertFalse toTest.validate()
+        assertEquals "range", toTest.errors["latitude"]
+    }
+
+    void testInvalidLowLongitude() {
+        toTest = new Location(latitude:-92,
+                              longitude:-200,
+                              address:address,
+                              contact:contact
+                          )
+        mockForConstraintsTests(Location, [toTest])
+        assertFalse toTest.validate()
+        assertEquals "range", toTest.errors["longitude"]
+    }
+
+    void testInvalidHighLongitude() {
+        toTest = new Location(latitude:92,
+                              longitude:200,
+                              address:address,
+                              contact:contact
+                          )
+        mockForConstraintsTests(Location, [toTest])
+        assertFalse toTest.validate()
+        assertEquals "range", toTest.errors["longitude"]
+    }
+
+}

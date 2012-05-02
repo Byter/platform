@@ -1,0 +1,19 @@
+Testsuite: com.visionarysoftwaresolutions.restaurant.menu.MenuItemTests
+Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 2.054 sec
+------------- Standard Output ---------------
+--Output from testInvalidMenuItemBlankRecipe--
+--Output from testMenuItemCalculateNutrition--
+--Output from testValidMenuItem--
+--Output from testInvalidMenuItemBlankName--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testInvalidMenuItemBlankRecipe--
+--Output from testMenuItemCalculateNutrition--
+--Output from testValidMenuItem--
+--Output from testInvalidMenuItemBlankName--
+------------- ---------------- ---------------
+
+Testcase: testInvalidMenuItemBlankRecipe took 0.736 sec
+Testcase: testMenuItemCalculateNutrition took 0.158 sec
+Testcase: testValidMenuItem took 0.097 sec
+Testcase: testInvalidMenuItemBlankName took 0.137 sec

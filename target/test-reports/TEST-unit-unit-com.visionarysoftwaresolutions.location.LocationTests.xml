@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Puppet" name="com.visionarysoftwaresolutions.location.LocationTests" tests="7" time="2.631" timestamp="2012-03-05T07:35:19">
+  <properties />
+  <testcase classname="com.visionarysoftwaresolutions.location.LocationTests" name="testInvalidLocationNullAddress" time="0.793" />
+  <testcase classname="com.visionarysoftwaresolutions.location.LocationTests" name="testInvalidLocationNullContact" time="0.208" />
+  <testcase classname="com.visionarysoftwaresolutions.location.LocationTests" name="testInvalidLowLatitude" time="0.241" />
+  <testcase classname="com.visionarysoftwaresolutions.location.LocationTests" name="testValidLocation" time="0.162" />
+  <testcase classname="com.visionarysoftwaresolutions.location.LocationTests" name="testInvalidHighLongitude" time="0.162" />
+  <testcase classname="com.visionarysoftwaresolutions.location.LocationTests" name="testInvalidLowLongitude" time="0.161" />
+  <testcase classname="com.visionarysoftwaresolutions.location.LocationTests" name="testInvalidHighLatitude" time="0.133" />
+  <system-out><![CDATA[--Output from testInvalidLocationNullAddress--
+--Output from testInvalidLocationNullContact--
+--Output from testInvalidLowLatitude--
+--Output from testValidLocation--
+--Output from testInvalidHighLongitude--
+--Output from testInvalidLowLongitude--
+--Output from testInvalidHighLatitude--
+]]></system-out>
+  <system-err><![CDATA[--Output from testInvalidLocationNullAddress--
+--Output from testInvalidLocationNullContact--
+--Output from testInvalidLowLatitude--
+--Output from testValidLocation--
+--Output from testInvalidHighLongitude--
+--Output from testInvalidLowLongitude--
+--Output from testInvalidHighLatitude--
+]]></system-err>
+</testsuite>

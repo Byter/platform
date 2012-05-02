@@ -1,0 +1,48 @@
+package com.visionarysoftwaresolutions.restaurant.menu
+
+import grails.test.*
+import com.visionarysoftwaresolutions.restaurant.Restaurant
+
+class MenuTests extends GrailsUnitTestCase {
+    Menu toTest
+    Restaurant restaurant = new Restaurant(name:"Nick's")
+    protected void setUp() {
+        super.setUp()
+    }
+
+    protected void tearDown() {
+        super.tearDown()
+    }
+
+    void testValidMenu() {
+        toTest = new Menu(name:"Breakfast", restaurant:restaurant)
+        mockForConstraintsTests(Menu, [toTest])
+        assertTrue toTest.validate()
+    }
+
+    void testInvalidMenuNoRestaurant() {
+        toTest = new Menu(name:"Breakfast")
+        mockForConstraintsTests(Menu, [toTest])
+        assertFalse toTest.validate()
+        assertEquals "nullable", toTest.errors["restaurant"]
+    }
+
+    void testValidMenus() {
+        toTest = new Menu(name:"Breakfast", restaurant:restaurant)
+        Restaurant tst2 = new Restaurant(name:'Mookie')
+        Menu tester = new Menu(name:"Breakfast", restaurant:tst2)
+        mockForConstraintsTests(Menu, [toTest,tester])
+        assertTrue toTest.validate()
+        assertTrue tester.validate()
+    }
+
+    void testChildMenus() {
+        Menu tester = new Menu(name:"Omlettes", restaurant:restaurant)
+        toTest = new Menu(name:"Breakfast",
+            subMenus:[tester],
+            restaurant:restaurant)
+        mockForConstraintsTests(Menu, [toTest,tester])
+        assertTrue toTest.validate()
+        assertTrue tester.validate()
+    }
+}

@@ -1,0 +1,77 @@
+package com.visionarysoftwaresolutions.restaurant.menu
+
+import grails.test.*
+import com.visionarysoftwaresolutions.restaurant.nutrition.*
+
+class MenuItemControllerTests extends ControllerUnitTestCase {
+    protected void setUp() {
+        super.setUp()
+    }
+
+    protected void tearDown() {
+        super.tearDown()
+    }
+    
+    private MenuItem createMenuItem(){
+        NutritionalInformation nut = new NutritionalInformation(
+            calories : 400,
+            caloriesFromFat : 200,
+            saturatedFat : 3,
+            transFat : 2,
+            cholesterol : 4,
+            sodium : 5,
+            totalCarbohydrate : 5,
+            dietaryFiber : 3,
+            sugars : 0,
+            protein : 30)
+        Serving serve = new Serving( name : "cup",
+                                     size : 1,
+                                     nutrition : nut
+                                   )
+        Ingredient ingrid = new Ingredient( name :"chicken", 
+                                            amount : 40,
+                                            unit : "cup"
+                                          )
+        Recipe helper = new Recipe(
+            name : "Chicken flambee",
+            preparationTime : "1 hour",
+            preparationSteps : ["dethaw chicken", "flambee chicken"],
+            ingredients : [ingrid],
+            servings : [serve]
+        )
+        return new MenuItem(
+                            name : "Krazy Karla's Chicken",
+                            price : new BigDecimal(5.00),
+                            recipe : helper
+                          )
+    }
+
+    void testShowingAMenuItem() {
+        mockDomain(MenuItem,
+                    [ createMenuItem() ])
+        this.controller.params.id = "1"
+        def model = this.controller.show()
+        assertEquals "Krazy Karla's Chicken", model["menuItemInstance"]?.name
+        
+    }
+    
+    void testRetrievingMenuItemPicture(){
+        def item = createMenuItem()
+        item.image = [127, 20, 21, 46, 72, 42] as byte[]
+        mockDomain(MenuItem,
+                    [ item ])
+        this.controller.params.id = "1"
+        this.controller.picture()
+        assertEquals item.image, this.controller.response.contentAsByteArray
+    }
+    
+    void testRetrievingMenuItemBarCode(){
+        def item = createMenuItem()
+        item.barCode = [127, 20, 21, 46, 72, 42] as byte[]
+        mockDomain(MenuItem,
+                    [ item ])
+        this.controller.params.id = "1"
+        this.controller.barCode()
+        assertEquals item.barCode, this.controller.response.contentAsByteArray
+    }
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Puppet" name="com.visionarysoftwaresolutions.restaurant.nutrition.RecipeTests" tests="6" time="4.631" timestamp="2012-03-05T07:35:45">
+  <properties />
+  <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.RecipeTests" name="testCalculateNutritionForMultipleServings" time="0.581" />
+  <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.RecipeTests" name="testCalculateNutritionForOneServing" time="0.062" />
+  <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.RecipeTests" name="testInvalidRecipeNullPreparation" time="0.143" />
+  <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.RecipeTests" name="testInvalidRecipeNullServings" time="0.055" />
+  <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.RecipeTests" name="testInvalidRecipeNullIngredients" time="0.059" />
+  <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.RecipeTests" name="testValidRecipe" time="3.033" />
+  <system-out><![CDATA[--Output from testCalculateNutritionForMultipleServings--
+--Output from testCalculateNutritionForOneServing--
+--Output from testInvalidRecipeNullPreparation--
+--Output from testInvalidRecipeNullServings--
+--Output from testInvalidRecipeNullIngredients--
+--Output from testValidRecipe--
+]]></system-out>
+  <system-err><![CDATA[--Output from testCalculateNutritionForMultipleServings--
+--Output from testCalculateNutritionForOneServing--
+--Output from testInvalidRecipeNullPreparation--
+--Output from testInvalidRecipeNullServings--
+--Output from testInvalidRecipeNullIngredients--
+--Output from testValidRecipe--
+]]></system-err>
+</testsuite>

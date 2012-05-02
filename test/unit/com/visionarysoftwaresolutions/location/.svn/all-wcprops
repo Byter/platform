@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/8/trunk/RestaurantManagement/test/unit/com/visionarysoftwaresolutions/location
+END
+LocationTests.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/8/trunk/RestaurantManagement/test/unit/com/visionarysoftwaresolutions/location/LocationTests.groovy
+END
+ContactInformationTests.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/8/trunk/RestaurantManagement/test/unit/com/visionarysoftwaresolutions/location/ContactInformationTests.groovy
+END
+StreetAddressTests.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/8/trunk/RestaurantManagement/test/unit/com/visionarysoftwaresolutions/location/StreetAddressTests.groovy
+END

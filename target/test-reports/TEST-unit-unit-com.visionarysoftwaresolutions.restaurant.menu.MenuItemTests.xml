@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Puppet" name="com.visionarysoftwaresolutions.restaurant.menu.MenuItemTests" tests="4" time="2.054" timestamp="2012-03-05T07:35:36">
+  <properties />
+  <testcase classname="com.visionarysoftwaresolutions.restaurant.menu.MenuItemTests" name="testInvalidMenuItemBlankRecipe" time="0.735" />
+  <testcase classname="com.visionarysoftwaresolutions.restaurant.menu.MenuItemTests" name="testMenuItemCalculateNutrition" time="0.158" />
+  <testcase classname="com.visionarysoftwaresolutions.restaurant.menu.MenuItemTests" name="testValidMenuItem" time="0.096" />
+  <testcase classname="com.visionarysoftwaresolutions.restaurant.menu.MenuItemTests" name="testInvalidMenuItemBlankName" time="0.137" />
+  <system-out><![CDATA[--Output from testInvalidMenuItemBlankRecipe--
+--Output from testMenuItemCalculateNutrition--
+--Output from testValidMenuItem--
+--Output from testInvalidMenuItemBlankName--
+]]></system-out>
+  <system-err><![CDATA[--Output from testInvalidMenuItemBlankRecipe--
+--Output from testMenuItemCalculateNutrition--
+--Output from testValidMenuItem--
+--Output from testInvalidMenuItemBlankName--
+]]></system-err>
+</testsuite>

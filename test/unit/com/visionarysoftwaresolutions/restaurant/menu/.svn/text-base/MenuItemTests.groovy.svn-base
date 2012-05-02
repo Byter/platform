@@ -1,0 +1,78 @@
+package com.visionarysoftwaresolutions.restaurant.menu
+
+import grails.test.*
+import com.visionarysoftwaresolutions.restaurant.nutrition.*
+
+class MenuItemTests extends GrailsUnitTestCase {
+    MenuItem toTest
+    
+    protected void setUp() {
+        super.setUp()
+    }
+
+    protected void tearDown() {
+        super.tearDown()
+    }
+    
+    private MenuItem createMenuItem(){
+        NutritionalInformation nut = new NutritionalInformation(
+            calories : 400,
+            caloriesFromFat : 200,
+            saturatedFat : 3,
+            transFat : 2,
+            cholesterol : 4,
+            sodium : 5,
+            totalCarbohydrate : 5,
+            dietaryFiber : 3,
+            sugars : 0,
+            protein : 30)
+        Serving serve = new Serving( name : "cup",
+                                     size : 1,
+                                     nutrition : nut
+                                   )
+        Ingredient ingrid = new Ingredient( name :"chicken", 
+                                            amount : 40,
+                                            unit : "cup"
+                                          )
+        Recipe helper = new Recipe(
+            name : "Chicken flambee",
+            preparationTime : "1 hour",
+            preparationSteps : ["dethaw chicken", "flambee chicken"],
+            ingredients : [ingrid],
+            servings : [serve]
+        )
+        return new MenuItem(
+                            name : "Krazy Karla's Chicken",
+                            price : new BigDecimal(5.00),
+                            recipe : helper
+                          )
+    }
+
+    void testValidMenuItem() {
+        toTest = createMenuItem()
+        mockForConstraintsTests(MenuItem, [toTest])
+        assertTrue toTest.validate()
+    }
+
+    void testInvalidMenuItemBlankName() {
+        toTest = createMenuItem()
+        toTest.name = ""
+        mockForConstraintsTests(MenuItem, [toTest])
+        assertFalse toTest.validate()
+        assertEquals "blank", toTest.errors["name"]
+    }
+
+    void testInvalidMenuItemBlankRecipe() {
+        toTest = new MenuItem(name:"Chicken flambee")
+        mockForConstraintsTests(MenuItem, [toTest])
+        assertFalse toTest.validate()
+        assertEquals "nullable", toTest.errors["recipe"]
+    }
+    
+    void testMenuItemCalculateNutrition(){
+        toTest = createMenuItem()
+        NutritionalInformation result = toTest.calculateNutrition()
+        assertEquals 400, result.calories
+        assertEquals 30, result.protein
+    }
+}

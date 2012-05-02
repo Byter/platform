@@ -1,0 +1,16 @@
+Testsuite: com.visionarysoftwaresolutions.restaurant.menu.MenuItemControllerTests
+Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 10.369 sec
+------------- Standard Output ---------------
+--Output from testRetrievingMenuItemBarCode--
+--Output from testRetrievingMenuItemPicture--
+--Output from testShowingAMenuItem--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testRetrievingMenuItemBarCode--
+--Output from testRetrievingMenuItemPicture--
+--Output from testShowingAMenuItem--
+------------- ---------------- ---------------
+
+Testcase: testRetrievingMenuItemBarCode took 9.209 sec
+Testcase: testRetrievingMenuItemPicture took 0.313 sec
+Testcase: testShowingAMenuItem took 0.239 sec

@@ -1,0 +1,13 @@
+Testsuite: com.visionarysoftwaresolutions.restaurant.nutrition.ServingTests
+Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 1.131 sec
+------------- Standard Output ---------------
+--Output from testInvalidNegativeServingSize--
+--Output from testInvalidBlankServingName--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testInvalidNegativeServingSize--
+--Output from testInvalidBlankServingName--
+------------- ---------------- ---------------
+
+Testcase: testInvalidNegativeServingSize took 0.462 sec
+Testcase: testInvalidBlankServingName took 0.042 sec

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/8/trunk/RestaurantManagement/grails-app/domain/com/visionarysoftwaresolutions/location
+END
+ContactInformation.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/8/trunk/RestaurantManagement/grails-app/domain/com/visionarysoftwaresolutions/location/ContactInformation.groovy
+END
+Location.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/8/trunk/RestaurantManagement/grails-app/domain/com/visionarysoftwaresolutions/location/Location.groovy
+END
+StreetAddress.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/8/trunk/RestaurantManagement/grails-app/domain/com/visionarysoftwaresolutions/location/StreetAddress.groovy
+END

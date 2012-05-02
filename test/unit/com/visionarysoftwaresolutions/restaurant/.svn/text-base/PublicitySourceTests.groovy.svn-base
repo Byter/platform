@@ -1,0 +1,44 @@
+package com.visionarysoftwaresolutions.restaurant
+
+import grails.test.*
+
+class PublicitySourceTests extends GrailsUnitTestCase {
+    PublicitySource toTest
+
+    protected void setUp() {
+        super.setUp()
+    }
+
+    protected void tearDown() {
+        super.tearDown()
+    }
+
+    void testValidPublicitySource() {
+        toTest= new PublicitySource(name:"Twitter", url:"http://www.twitter.com")
+        mockForConstraintsTests(PublicitySource, [toTest])
+        assertTrue toTest.validate()
+
+    }
+
+    void testBlankName() {
+        toTest= new PublicitySource(name:"", url:"http://www.twitter.com")
+        mockForConstraintsTests(PublicitySource, [toTest])
+        assertFalse toTest.validate()
+        assertEquals "blank", toTest.errors["name"]
+    }
+
+    void testNonUniqueName() {
+        toTest= new PublicitySource(name:"Twitter", url:"http://www.twitter.com")
+        PublicitySource test2 = new PublicitySource(name:"Twitter", url:"http://www.hackme.com")
+        mockForConstraintsTests(PublicitySource, [toTest, test2])
+        assertFalse toTest.validate()
+        assertEquals "unique", toTest.errors["name"]
+    }
+
+    void testNonBadUrl() {
+        toTest= new PublicitySource(name:"Twitter", url:"fuck me")
+        mockForConstraintsTests(PublicitySource, [toTest])
+        assertFalse toTest.validate()
+        assertEquals "url", toTest.errors["url"]
+    }
+}

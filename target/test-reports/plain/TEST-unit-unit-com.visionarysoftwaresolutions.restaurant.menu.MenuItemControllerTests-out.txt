@@ -1,0 +1,3 @@
+--Output from testRetrievingMenuItemBarCode--
+--Output from testRetrievingMenuItemPicture--
+--Output from testShowingAMenuItem--

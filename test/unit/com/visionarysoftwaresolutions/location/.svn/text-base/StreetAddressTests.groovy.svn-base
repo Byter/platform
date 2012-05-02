@@ -1,0 +1,24 @@
+package com.visionarysoftwaresolutions.location
+
+import grails.test.*
+
+class StreetAddressTests extends GrailsUnitTestCase {
+    StreetAddress toTest
+    protected void setUp() {
+        super.setUp()
+    }
+
+    protected void tearDown() {
+        super.tearDown()
+    }
+
+    void testValidStreetAddress() {
+        toTest = new StreetAddress(address:"3116 S. Mill Ave",
+        city:"Tempe",
+        region:'Arizona',
+        postalCode:"85281",
+        country:"USA")
+        mockForConstraintsTests(StreetAddress, [toTest])
+        assertTrue toTest.validate()
+    }
+}

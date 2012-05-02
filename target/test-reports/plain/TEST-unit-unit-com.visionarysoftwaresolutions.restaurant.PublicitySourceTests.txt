@@ -1,0 +1,19 @@
+Testsuite: com.visionarysoftwaresolutions.restaurant.PublicitySourceTests
+Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 1.792 sec
+------------- Standard Output ---------------
+--Output from testNonBadUrl--
+--Output from testNonUniqueName--
+--Output from testBlankName--
+--Output from testValidPublicitySource--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testNonBadUrl--
+--Output from testNonUniqueName--
+--Output from testBlankName--
+--Output from testValidPublicitySource--
+------------- ---------------- ---------------
+
+Testcase: testNonBadUrl took 0.831 sec
+Testcase: testNonUniqueName took 0.094 sec
+Testcase: testBlankName took 0.039 sec
+Testcase: testValidPublicitySource took 0.043 sec

@@ -1,0 +1,5 @@
+--Output from testValidNullPhoneNumber--
+--Output from testValidNullEmail--
+--Output from testValidContactInformation--
+--Output from testValidNullVirtualSpots--
+--Output from testInvalidEmail--

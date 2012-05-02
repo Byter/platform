@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="Puppet" id="0" name="CapriIntegrationTests" package="com.visionarysoftwaresolutions.restaurant" tests="4" time="2.66" timestamp="2012-03-05T07:36:44">
+      <properties />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.CapriIntegrationTests" name="testSetupRestaurant" time="1.344" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.CapriIntegrationTests" name="testBuildMenu" time="0.234" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.CapriIntegrationTests" name="testBuildRecipes" time="0.591" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.CapriIntegrationTests" name="testAddMenuItems" time="0.47" />
+
+      <system-out><![CDATA[--Output from testSetupRestaurant--
+--Output from testBuildMenu--
+--Output from testBuildRecipes--
+--Output from testAddMenuItems--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSetupRestaurant--
+--Output from testBuildMenu--
+--Output from testBuildRecipes--
+--Output from testAddMenuItems--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Puppet" id="1" name="ContactInformationTests" package="com.visionarysoftwaresolutions.location" tests="5" time="6.072" timestamp="2012-03-05T07:35:13">
+      <properties />
+
+      <testcase classname="com.visionarysoftwaresolutions.location.ContactInformationTests" name="testValidNullPhoneNumber" time="4.474" />
+
+      <testcase classname="com.visionarysoftwaresolutions.location.ContactInformationTests" name="testValidNullEmail" time="0.096" />
+
+      <testcase classname="com.visionarysoftwaresolutions.location.ContactInformationTests" name="testValidContactInformation" time="0.089" />
+
+      <testcase classname="com.visionarysoftwaresolutions.location.ContactInformationTests" name="testValidNullVirtualSpots" time="0.087" />
+
+      <testcase classname="com.visionarysoftwaresolutions.location.ContactInformationTests" name="testInvalidEmail" time="0.176" />
+
+      <system-out><![CDATA[--Output from testValidNullPhoneNumber--
+--Output from testValidNullEmail--
+--Output from testValidContactInformation--
+--Output from testValidNullVirtualSpots--
+--Output from testInvalidEmail--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testValidNullPhoneNumber--
+--Output from testValidNullEmail--
+--Output from testValidContactInformation--
+--Output from testValidNullVirtualSpots--
+--Output from testInvalidEmail--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Puppet" id="2" name="LocationTests" package="com.visionarysoftwaresolutions.location" tests="7" time="2.631" timestamp="2012-03-05T07:35:19">
+      <properties />
+
+      <testcase classname="com.visionarysoftwaresolutions.location.LocationTests" name="testInvalidLocationNullAddress" time="0.793" />
+
+      <testcase classname="com.visionarysoftwaresolutions.location.LocationTests" name="testInvalidLocationNullContact" time="0.208" />
+
+      <testcase classname="com.visionarysoftwaresolutions.location.LocationTests" name="testInvalidLowLatitude" time="0.241" />
+
+      <testcase classname="com.visionarysoftwaresolutions.location.LocationTests" name="testValidLocation" time="0.162" />
+
+      <testcase classname="com.visionarysoftwaresolutions.location.LocationTests" name="testInvalidHighLongitude" time="0.162" />
+
+      <testcase classname="com.visionarysoftwaresolutions.location.LocationTests" name="testInvalidLowLongitude" time="0.161" />
+
+      <testcase classname="com.visionarysoftwaresolutions.location.LocationTests" name="testInvalidHighLatitude" time="0.133" />
+
+      <system-out><![CDATA[--Output from testInvalidLocationNullAddress--
+--Output from testInvalidLocationNullContact--
+--Output from testInvalidLowLatitude--
+--Output from testValidLocation--
+--Output from testInvalidHighLongitude--
+--Output from testInvalidLowLongitude--
+--Output from testInvalidHighLatitude--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testInvalidLocationNullAddress--
+--Output from testInvalidLocationNullContact--
+--Output from testInvalidLowLatitude--
+--Output from testValidLocation--
+--Output from testInvalidHighLongitude--
+--Output from testInvalidLowLongitude--
+--Output from testInvalidHighLatitude--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Puppet" id="3" name="StreetAddressTests" package="com.visionarysoftwaresolutions.location" tests="1" time="3.054" timestamp="2012-03-05T07:35:22">
+      <properties />
+
+      <testcase classname="com.visionarysoftwaresolutions.location.StreetAddressTests" name="testValidStreetAddress" time="0.421" />
+
+      <system-out><![CDATA[--Output from testValidStreetAddress--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testValidStreetAddress--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Puppet" id="4" name="PublicitySourceTests" package="com.visionarysoftwaresolutions.restaurant" tests="4" time="1.792" timestamp="2012-03-05T07:35:51">
+      <properties />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.PublicitySourceTests" name="testNonBadUrl" time="0.831" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.PublicitySourceTests" name="testNonUniqueName" time="0.094" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.PublicitySourceTests" name="testBlankName" time="0.039" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.PublicitySourceTests" name="testValidPublicitySource" time="0.043" />
+
+      <system-out><![CDATA[--Output from testNonBadUrl--
+--Output from testNonUniqueName--
+--Output from testBlankName--
+--Output from testValidPublicitySource--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testNonBadUrl--
+--Output from testNonUniqueName--
+--Output from testBlankName--
+--Output from testValidPublicitySource--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Puppet" id="5" name="RestaurantTests" package="com.visionarysoftwaresolutions.restaurant" tests="5" time="0.797" timestamp="2012-03-05T07:35:53">
+      <properties />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.RestaurantTests" name="testInvalidRestaurantNoSchedule" time="0.518" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.RestaurantTests" name="testInvalidRestaurantNoLocation" time="0.063" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.RestaurantTests" name="testInvalidConflictingRestaurants" time="0.063" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.RestaurantTests" name="testInvalidBlankNameRestaurant" time="0.045" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.RestaurantTests" name="testValidRestaurant" time="0.052" />
+
+      <system-out><![CDATA[--Output from testInvalidRestaurantNoSchedule--
+--Output from testInvalidRestaurantNoLocation--
+--Output from testInvalidConflictingRestaurants--
+--Output from testInvalidBlankNameRestaurant--
+--Output from testValidRestaurant--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testInvalidRestaurantNoSchedule--
+--Output from testInvalidRestaurantNoLocation--
+--Output from testInvalidConflictingRestaurants--
+--Output from testInvalidBlankNameRestaurant--
+--Output from testValidRestaurant--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Puppet" id="6" name="MenuItemControllerTests" package="com.visionarysoftwaresolutions.restaurant.menu" tests="3" time="10.369" timestamp="2012-03-05T07:35:25">
+      <properties />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.menu.MenuItemControllerTests" name="testRetrievingMenuItemBarCode" time="9.209" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.menu.MenuItemControllerTests" name="testRetrievingMenuItemPicture" time="0.313" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.menu.MenuItemControllerTests" name="testShowingAMenuItem" time="0.239" />
+
+      <system-out><![CDATA[--Output from testRetrievingMenuItemBarCode--
+--Output from testRetrievingMenuItemPicture--
+--Output from testShowingAMenuItem--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testRetrievingMenuItemBarCode--
+--Output from testRetrievingMenuItemPicture--
+--Output from testShowingAMenuItem--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Puppet" id="7" name="MenuItemTests" package="com.visionarysoftwaresolutions.restaurant.menu" tests="4" time="2.054" timestamp="2012-03-05T07:35:36">
+      <properties />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.menu.MenuItemTests" name="testInvalidMenuItemBlankRecipe" time="0.735" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.menu.MenuItemTests" name="testMenuItemCalculateNutrition" time="0.158" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.menu.MenuItemTests" name="testValidMenuItem" time="0.096" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.menu.MenuItemTests" name="testInvalidMenuItemBlankName" time="0.137" />
+
+      <system-out><![CDATA[--Output from testInvalidMenuItemBlankRecipe--
+--Output from testMenuItemCalculateNutrition--
+--Output from testValidMenuItem--
+--Output from testInvalidMenuItemBlankName--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testInvalidMenuItemBlankRecipe--
+--Output from testMenuItemCalculateNutrition--
+--Output from testValidMenuItem--
+--Output from testInvalidMenuItemBlankName--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Puppet" id="8" name="MenuTests" package="com.visionarysoftwaresolutions.restaurant.menu" tests="4" time="2.505" timestamp="2012-03-05T07:35:38">
+      <properties />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.menu.MenuTests" name="testChildMenus" time="1.691" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.menu.MenuTests" name="testValidMenus" time="0.057" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.menu.MenuTests" name="testInvalidMenuNoRestaurant" time="0.079" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.menu.MenuTests" name="testValidMenu" time="0.053" />
+
+      <system-out><![CDATA[--Output from testChildMenus--
+--Output from testValidMenus--
+--Output from testInvalidMenuNoRestaurant--
+--Output from testValidMenu--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testChildMenus--
+--Output from testValidMenus--
+--Output from testInvalidMenuNoRestaurant--
+--Output from testValidMenu--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Puppet" id="9" name="IngredientTests" package="com.visionarysoftwaresolutions.restaurant.nutrition" tests="4" time="1.878" timestamp="2012-03-05T07:35:40">
+      <properties />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.IngredientTests" name="testInvalidNegativeAmountIngredient" time="1.097" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.IngredientTests" name="testInvalidBlankNameIngredient" time="0.047" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.IngredientTests" name="testInvalidUnitIngredient" time="0.046" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.IngredientTests" name="testValidIngredient" time="0.047" />
+
+      <system-out><![CDATA[--Output from testInvalidNegativeAmountIngredient--
+--Output from testInvalidBlankNameIngredient--
+--Output from testInvalidUnitIngredient--
+--Output from testValidIngredient--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testInvalidNegativeAmountIngredient--
+--Output from testInvalidBlankNameIngredient--
+--Output from testInvalidUnitIngredient--
+--Output from testValidIngredient--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Puppet" id="10" name="NutritionalInformationTests" package="com.visionarysoftwaresolutions.restaurant.nutrition" tests="15" time="2.452" timestamp="2012-03-05T07:35:42">
+      <properties />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.NutritionalInformationTests" name="testInvalidNegativeCholesterol" time="0.477" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.NutritionalInformationTests" name="testInvalidNegativeTotalCarbohydrate" time="0.051" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.NutritionalInformationTests" name="testInvalidNegativeDietaryFiber" time="0.093" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.NutritionalInformationTests" name="testInvalidNegativeCaloriesFromFat" time="0.075" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.NutritionalInformationTests" name="testInvalidTooBigCaloriesFromFat" time="0.085" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.NutritionalInformationTests" name="testInvalidNegativeSaturatedFat" time="0.064" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.NutritionalInformationTests" name="testInvalidTooBigDietaryFiber" time="0.092" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.NutritionalInformationTests" name="testCombinedNutritionalInformation" time="0.2" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.NutritionalInformationTests" name="testInvalidNegativeSodium" time="0.143" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.NutritionalInformationTests" name="testInvalidNegativeTransFat" time="0.062" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.NutritionalInformationTests" name="testInvalidNegativeCalories" time="0.054" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.NutritionalInformationTests" name="testInvalidNegativeSugars" time="0.063" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.NutritionalInformationTests" name="testInvalidTooBigSugars" time="0.064" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.NutritionalInformationTests" name="testInvalidNegativeProtein" time="0.067" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.NutritionalInformationTests" name="testCalculateTotalFat" time="0.034" />
+
+      <system-out><![CDATA[--Output from testInvalidNegativeCholesterol--
+--Output from testInvalidNegativeTotalCarbohydrate--
+--Output from testInvalidNegativeDietaryFiber--
+--Output from testInvalidNegativeCaloriesFromFat--
+--Output from testInvalidTooBigCaloriesFromFat--
+--Output from testInvalidNegativeSaturatedFat--
+--Output from testInvalidTooBigDietaryFiber--
+--Output from testCombinedNutritionalInformation--
+--Output from testInvalidNegativeSodium--
+--Output from testInvalidNegativeTransFat--
+--Output from testInvalidNegativeCalories--
+--Output from testInvalidNegativeSugars--
+--Output from testInvalidTooBigSugars--
+--Output from testInvalidNegativeProtein--
+--Output from testCalculateTotalFat--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testInvalidNegativeCholesterol--
+--Output from testInvalidNegativeTotalCarbohydrate--
+--Output from testInvalidNegativeDietaryFiber--
+--Output from testInvalidNegativeCaloriesFromFat--
+--Output from testInvalidTooBigCaloriesFromFat--
+--Output from testInvalidNegativeSaturatedFat--
+--Output from testInvalidTooBigDietaryFiber--
+--Output from testCombinedNutritionalInformation--
+--Output from testInvalidNegativeSodium--
+--Output from testInvalidNegativeTransFat--
+--Output from testInvalidNegativeCalories--
+--Output from testInvalidNegativeSugars--
+--Output from testInvalidTooBigSugars--
+--Output from testInvalidNegativeProtein--
+--Output from testCalculateTotalFat--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Puppet" id="11" name="RecipeTests" package="com.visionarysoftwaresolutions.restaurant.nutrition" tests="6" time="4.631" timestamp="2012-03-05T07:35:45">
+      <properties />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.RecipeTests" name="testCalculateNutritionForMultipleServings" time="0.581" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.RecipeTests" name="testCalculateNutritionForOneServing" time="0.062" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.RecipeTests" name="testInvalidRecipeNullPreparation" time="0.143" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.RecipeTests" name="testInvalidRecipeNullServings" time="0.055" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.RecipeTests" name="testInvalidRecipeNullIngredients" time="0.059" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.RecipeTests" name="testValidRecipe" time="3.033" />
+
+      <system-out><![CDATA[--Output from testCalculateNutritionForMultipleServings--
+--Output from testCalculateNutritionForOneServing--
+--Output from testInvalidRecipeNullPreparation--
+--Output from testInvalidRecipeNullServings--
+--Output from testInvalidRecipeNullIngredients--
+--Output from testValidRecipe--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testCalculateNutritionForMultipleServings--
+--Output from testCalculateNutritionForOneServing--
+--Output from testInvalidRecipeNullPreparation--
+--Output from testInvalidRecipeNullServings--
+--Output from testInvalidRecipeNullIngredients--
+--Output from testValidRecipe--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Puppet" id="12" name="ServingTests" package="com.visionarysoftwaresolutions.restaurant.nutrition" tests="2" time="1.131" timestamp="2012-03-05T07:35:50">
+      <properties />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.ServingTests" name="testInvalidNegativeServingSize" time="0.462" />
+
+      <testcase classname="com.visionarysoftwaresolutions.restaurant.nutrition.ServingTests" name="testInvalidBlankServingName" time="0.041" />
+
+      <system-out><![CDATA[--Output from testInvalidNegativeServingSize--
+--Output from testInvalidBlankServingName--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testInvalidNegativeServingSize--
+--Output from testInvalidBlankServingName--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

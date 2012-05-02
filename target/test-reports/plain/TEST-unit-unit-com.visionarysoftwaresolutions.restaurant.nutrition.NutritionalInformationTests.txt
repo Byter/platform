@@ -1,0 +1,52 @@
+Testsuite: com.visionarysoftwaresolutions.restaurant.nutrition.NutritionalInformationTests
+Tests run: 15, Failures: 0, Errors: 0, Time elapsed: 2.452 sec
+------------- Standard Output ---------------
+--Output from testInvalidNegativeCholesterol--
+--Output from testInvalidNegativeTotalCarbohydrate--
+--Output from testInvalidNegativeDietaryFiber--
+--Output from testInvalidNegativeCaloriesFromFat--
+--Output from testInvalidTooBigCaloriesFromFat--
+--Output from testInvalidNegativeSaturatedFat--
+--Output from testInvalidTooBigDietaryFiber--
+--Output from testCombinedNutritionalInformation--
+--Output from testInvalidNegativeSodium--
+--Output from testInvalidNegativeTransFat--
+--Output from testInvalidNegativeCalories--
+--Output from testInvalidNegativeSugars--
+--Output from testInvalidTooBigSugars--
+--Output from testInvalidNegativeProtein--
+--Output from testCalculateTotalFat--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testInvalidNegativeCholesterol--
+--Output from testInvalidNegativeTotalCarbohydrate--
+--Output from testInvalidNegativeDietaryFiber--
+--Output from testInvalidNegativeCaloriesFromFat--
+--Output from testInvalidTooBigCaloriesFromFat--
+--Output from testInvalidNegativeSaturatedFat--
+--Output from testInvalidTooBigDietaryFiber--
+--Output from testCombinedNutritionalInformation--
+--Output from testInvalidNegativeSodium--
+--Output from testInvalidNegativeTransFat--
+--Output from testInvalidNegativeCalories--
+--Output from testInvalidNegativeSugars--
+--Output from testInvalidTooBigSugars--
+--Output from testInvalidNegativeProtein--
+--Output from testCalculateTotalFat--
+------------- ---------------- ---------------
+
+Testcase: testInvalidNegativeCholesterol took 0.477 sec
+Testcase: testInvalidNegativeTotalCarbohydrate took 0.051 sec
+Testcase: testInvalidNegativeDietaryFiber took 0.093 sec
+Testcase: testInvalidNegativeCaloriesFromFat took 0.075 sec
+Testcase: testInvalidTooBigCaloriesFromFat took 0.085 sec
+Testcase: testInvalidNegativeSaturatedFat took 0.064 sec
+Testcase: testInvalidTooBigDietaryFiber took 0.092 sec
+Testcase: testCombinedNutritionalInformation took 0.201 sec
+Testcase: testInvalidNegativeSodium took 0.143 sec
+Testcase: testInvalidNegativeTransFat took 0.062 sec
+Testcase: testInvalidNegativeCalories took 0.054 sec
+Testcase: testInvalidNegativeSugars took 0.063 sec
+Testcase: testInvalidTooBigSugars took 0.064 sec
+Testcase: testInvalidNegativeProtein took 0.067 sec
+Testcase: testCalculateTotalFat took 0.034 sec

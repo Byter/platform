@@ -1,0 +1,19 @@
+Testsuite: com.visionarysoftwaresolutions.restaurant.nutrition.IngredientTests
+Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 1.878 sec
+------------- Standard Output ---------------
+--Output from testInvalidNegativeAmountIngredient--
+--Output from testInvalidBlankNameIngredient--
+--Output from testInvalidUnitIngredient--
+--Output from testValidIngredient--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testInvalidNegativeAmountIngredient--
+--Output from testInvalidBlankNameIngredient--
+--Output from testInvalidUnitIngredient--
+--Output from testValidIngredient--
+------------- ---------------- ---------------
+
+Testcase: testInvalidNegativeAmountIngredient took 1.097 sec
+Testcase: testInvalidBlankNameIngredient took 0.047 sec
+Testcase: testInvalidUnitIngredient took 0.046 sec
+Testcase: testValidIngredient took 0.047 sec

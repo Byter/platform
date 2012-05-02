@@ -1,0 +1,28 @@
+Testsuite: com.visionarysoftwaresolutions.location.LocationTests
+Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 2.631 sec
+------------- Standard Output ---------------
+--Output from testInvalidLocationNullAddress--
+--Output from testInvalidLocationNullContact--
+--Output from testInvalidLowLatitude--
+--Output from testValidLocation--
+--Output from testInvalidHighLongitude--
+--Output from testInvalidLowLongitude--
+--Output from testInvalidHighLatitude--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testInvalidLocationNullAddress--
+--Output from testInvalidLocationNullContact--
+--Output from testInvalidLowLatitude--
+--Output from testValidLocation--
+--Output from testInvalidHighLongitude--
+--Output from testInvalidLowLongitude--
+--Output from testInvalidHighLatitude--
+------------- ---------------- ---------------
+
+Testcase: testInvalidLocationNullAddress took 0.793 sec
+Testcase: testInvalidLocationNullContact took 0.208 sec
+Testcase: testInvalidLowLatitude took 0.241 sec
+Testcase: testValidLocation took 0.162 sec
+Testcase: testInvalidHighLongitude took 0.162 sec
+Testcase: testInvalidLowLongitude took 0.161 sec
+Testcase: testInvalidHighLatitude took 0.133 sec

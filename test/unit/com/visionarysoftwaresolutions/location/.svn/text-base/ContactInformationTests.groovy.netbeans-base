@@ -1,0 +1,61 @@
+package com.visionarysoftwaresolutions.location
+
+import grails.test.*
+
+class ContactInformationTests extends GrailsUnitTestCase {
+    ContactInformation toTest
+    protected void setUp() {
+        super.setUp()
+    }
+
+    protected void tearDown() {
+        super.tearDown()
+    }
+
+    void testValidContactInformation() {
+        Map moo = ["Twitter":'@swVisionary']
+        toTest = new ContactInformation(phone:'4807207565',
+            email:'ntv1534@gmail.com',
+            virtualSpots:moo
+        )
+        mockForConstraintsTests(ContactInformation, [toTest])
+        assertTrue toTest.validate()
+    }
+
+    void testValidNullPhoneNumber() {
+        Map moo = ["Twitter":'@swVisionary']
+        toTest = new ContactInformation(
+            email:'ntv1534@gmail.com',
+            virtualSpots:moo
+        )
+        mockForConstraintsTests(ContactInformation, [toTest])
+        assertTrue toTest.validate()
+    }
+
+    void testValidNullEmail() {
+        Map moo = ["Twitter":'@swVisionary']
+        toTest = new ContactInformation(phone:'4807207565',
+            virtualSpots:moo
+        )
+        mockForConstraintsTests(ContactInformation, [toTest])
+        assertTrue toTest.validate()
+    }
+
+    void testValidNullVirtualSpots() {
+        toTest = new ContactInformation(phone:'4807207565',
+            email:'ntv1534@gmail.com')
+        mockForConstraintsTests(ContactInformation, [toTest])
+        assertTrue toTest.validate()
+    }
+
+    void testInvalidEmail(){
+        Map moo = ["Twitter":'@swVisionary']
+        toTest = new ContactInformation(phone:'4807207565',
+            email:'fuck',
+            virtualSpots:moo
+        )
+        mockForConstraintsTests(ContactInformation, [toTest])
+        assertFalse toTest.validate()
+        assertEquals "email", toTest.errors['email']
+    }
+}

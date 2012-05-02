@@ -1,0 +1,22 @@
+Testsuite: com.visionarysoftwaresolutions.restaurant.RestaurantTests
+Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.797 sec
+------------- Standard Output ---------------
+--Output from testInvalidRestaurantNoSchedule--
+--Output from testInvalidRestaurantNoLocation--
+--Output from testInvalidConflictingRestaurants--
+--Output from testInvalidBlankNameRestaurant--
+--Output from testValidRestaurant--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testInvalidRestaurantNoSchedule--
+--Output from testInvalidRestaurantNoLocation--
+--Output from testInvalidConflictingRestaurants--
+--Output from testInvalidBlankNameRestaurant--
+--Output from testValidRestaurant--
+------------- ---------------- ---------------
+
+Testcase: testInvalidRestaurantNoSchedule took 0.518 sec
+Testcase: testInvalidRestaurantNoLocation took 0.063 sec
+Testcase: testInvalidConflictingRestaurants took 0.063 sec
+Testcase: testInvalidBlankNameRestaurant took 0.045 sec
+Testcase: testValidRestaurant took 0.052 sec

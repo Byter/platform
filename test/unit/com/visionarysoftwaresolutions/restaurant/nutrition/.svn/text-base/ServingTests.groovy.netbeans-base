@@ -1,0 +1,27 @@
+package com.visionarysoftwaresolutions.restaurant.nutrition
+
+import grails.test.*
+
+class ServingTests extends GrailsUnitTestCase {
+    protected void setUp() {
+        super.setUp()
+    }
+
+    protected void tearDown() {
+        super.tearDown()
+    }
+
+    void testInvalidBlankServingName(){
+        def toTest= new Serving(name:'', size:10)
+        mockForConstraintsTests(Serving, [toTest])
+        assertFalse toTest.validate()
+        assertEquals "blank", toTest.errors['name']
+    }
+
+    void testInvalidNegativeServingSize(){
+        def toTest= new Serving(name: 'fake', size:-1)
+        mockForConstraintsTests(Serving, [toTest])
+        assertFalse toTest.validate()
+        assertEquals "min", toTest.errors['size']
+    }
+}
