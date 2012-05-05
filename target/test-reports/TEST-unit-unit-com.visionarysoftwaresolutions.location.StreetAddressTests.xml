@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="Puppet" name="com.visionarysoftwaresolutions.location.StreetAddressTests" tests="1" time="3.054" timestamp="2012-03-05T07:35:22">
-  <properties />
-  <testcase classname="com.visionarysoftwaresolutions.location.StreetAddressTests" name="testValidStreetAddress" time="0.421" />
-  <system-out><![CDATA[--Output from testValidStreetAddress--
-]]></system-out>
-  <system-err><![CDATA[--Output from testValidStreetAddress--
-]]></system-err>
-</testsuite>

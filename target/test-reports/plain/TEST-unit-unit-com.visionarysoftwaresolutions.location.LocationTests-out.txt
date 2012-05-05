@@ -1,7 +1,0 @@
---Output from testInvalidLocationNullAddress--
---Output from testInvalidLocationNullContact--
---Output from testInvalidLowLatitude--
---Output from testValidLocation--
---Output from testInvalidHighLongitude--
---Output from testInvalidLowLongitude--
---Output from testInvalidHighLatitude--

@@ -1,4 +1,0 @@
---Output from testInvalidMenuItemBlankRecipe--
---Output from testMenuItemCalculateNutrition--
---Output from testValidMenuItem--
---Output from testInvalidMenuItemBlankName--

@@ -1,5 +1,0 @@
---Output from testInvalidRestaurantNoSchedule--
---Output from testInvalidRestaurantNoLocation--
---Output from testInvalidConflictingRestaurants--
---Output from testInvalidBlankNameRestaurant--
---Output from testValidRestaurant--

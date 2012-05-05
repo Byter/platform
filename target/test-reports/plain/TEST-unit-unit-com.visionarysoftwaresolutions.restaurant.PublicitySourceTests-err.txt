@@ -1,4 +1,0 @@
---Output from testNonBadUrl--
---Output from testNonUniqueName--
---Output from testBlankName--
---Output from testValidPublicitySource--

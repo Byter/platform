@@ -1,4 +1,0 @@
---Output from testInvalidNegativeAmountIngredient--
---Output from testInvalidBlankNameIngredient--
---Output from testInvalidUnitIngredient--
---Output from testValidIngredient--

@@ -1,6 +1,0 @@
---Output from testCalculateNutritionForMultipleServings--
---Output from testCalculateNutritionForOneServing--
---Output from testInvalidRecipeNullPreparation--
---Output from testInvalidRecipeNullServings--
---Output from testInvalidRecipeNullIngredients--
---Output from testValidRecipe--
